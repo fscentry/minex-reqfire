@@ -1,0 +1,20 @@
+{
+  "test_name": "Login API Load Test",
+  "url": "https://test.com/users/registration",
+  "method": "POST",
+  "body": null,
+  "body_file": "input/example.txt",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "X-App-Version": "1.0.0",
+    "Authorization": "Bearer YOUR_TOKEN_HERE"
+  },
+  "parallel_limit": 30,
+  "total_requests": 0,
+  "timeout_ms": 30000,
+  "danger_accept_invalid_certs": true,
+  "follow_redirects": true,
+  "csv_output": "output/results.csv",
+  "summary_output": "output/summary.txt"
+}
